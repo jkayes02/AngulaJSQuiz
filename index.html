@@ -14,14 +14,14 @@
     <title>Quiz App</title>
 </head>
 <body>
-    <div class="contianer">
+    <div class="container">
         <div class="page-header">
             <h1>Turtle Facts Quiz 2</h1>
             <h3>
                 Learn about all the turles below, before you attempt to take the <strong>TURTLE QUIZ</strong>
             </h3>
             
-            </div>
+        </div>
 
             <div ng-controller="listCtrl as list">
                 <div class="row">
@@ -45,37 +45,37 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="modal" id="turtle-info">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h2>{{list.activeTurtle.type}}</h2>
-                            </div>
-                            <div class="modal-body">
-                                <div class="row">
-                                    <div class="col-xs-8 col-xs-offset-2"> 
-                                    <img ng-src="{{list.activeTurtle.image_url}}" alt="" class="img-rounded img-responsive">
-                                </div>
-                                <div class="row top-buffer">
-                                    <div class="col-md-6">
-                                        <p><strong>Locations: </strong>{{list.activeTurtle.locations}}<p>
-                                        <p><strong>Size: </strong>{{list.activeTurtle.locations}}<p>
-                                        <p><strong>Average LifeSpan: </strong>{{list.activeTurtle.lifespan}}<p>
-                                        <p><strong>Diet: </strong> {{list.activeTurtle.diet}}<p>
+                    <div class="modal" id="turtle-info">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2>{{list.activeTurtle.type}}</h2>
                                     </div>
-                                    <div class="col-xs-12 top-buffer">
-                                        <p>{{list.activeTurtle.description}}</p>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-xs-8 col-xs-offset-2"> 
+                                                <img ng-src="{{list.activeTurtle.image_url}}" alt="" class="img-rounded img-responsive">
+                                            </div>
+                                        </div>
+                                        <div class="row top-buffer">
+                                            <div class="col-md-6">
+                                                <p><strong>Locations: </strong>{{list.activeTurtle.locations}}<p>
+                                                <p><strong>Size: </strong>{{list.activeTurtle.locations}}<p>
+                                                <p><strong>Average LifeSpan: </strong>{{list.activeTurtle.lifespan}}<p>
+                                                <p><strong>Diet: </strong> {{list.activeTurtle.diet}}<p>
+                                            </div>
+                                            <div class="col-xs-12 top-buffer">
+                                                <p>{{list.activeTurtle.description}}</p>
+                                                <button class="btn btn-danger" 
+                                                data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
+                                </div> <!-- modal content -->
                             </div>
-                        </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </div>
+                    </div> <!-- modal -->
+                </div> <!-- controller -->
+            </div> <!-- container -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="JS/jquery-3.2.1.min.js"></script>
