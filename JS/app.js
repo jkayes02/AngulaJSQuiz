@@ -3,6 +3,8 @@
 
     app.controller("listCtrl", function($scope) {
         this.activeTurtle = {};
+        this.search = "";
+        this.quizActive = false;
         this.turtleData = [
         {
             type: "Green Turtle",
@@ -80,6 +82,9 @@
 
         this.changeActiveTurtle = function(index) {
             this.activeTurtle = index;
+        };
+        this.activateQuiz = function() {
+            this.quizActive = true;
         };
     });
 
