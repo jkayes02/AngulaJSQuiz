@@ -5,6 +5,8 @@
 
     function quizController(quizMetrics, dataService) {
         this.quizMetrics = quizMetrics;
+        this.dataService = dataService;
+        this.activeQuestion = 0;
     };
-    quizController.$inject = ['quizMectrics', 'dataService'];
+    quizController.$inject = ['quizMetrics', 'dataService'];
 })();
