@@ -11,6 +11,10 @@
         this.quizMetrics = quizMetrics;
         this.dataService = dataService;
         this.activeQuestion = 0;
+
+        this.selectAnswer = function(index) {
+            dataService.questions[this.activeQuestion].selected = index;
+        };
         this.setActiveQuestion = function() {
             while(true) {
                 this.activeQuestion++;
