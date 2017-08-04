@@ -14,7 +14,7 @@
             this.activeTurtle = index;
         };
         this.activateQuiz = function() {
-            this.quizMetrics.changeState(true);
+            this.quizMetrics.changeState("quiz");
         };
 
     }

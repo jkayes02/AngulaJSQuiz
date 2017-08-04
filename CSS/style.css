@@ -28,3 +28,6 @@
 .image-selected {
     border: 3px solid #56afdc;
 }
+.image-correct {
+    border: 3px solid #5cb85c;
+}
